@@ -1,0 +1,98 @@
+h1 {
+  color: red;
+}
+
+/*
+So, you can target individual selectors, such as:
+p, li {
+    color: green;
+}
+
+li {
+    color: green;
+}
+
+Or multiple selectors at one go such as the style that is not commented below.ß
+*/
+
+p, li {
+    color: green;
+}
+
+/* Change the default behaviour of elements */
+
+li {
+    list-style-type: square; /* default is bullet */
+  }
+
+/* add class */
+.special {
+    color: orange;
+    font-weight: bold;
+  }
+
+/* This class could be applied to a specific element as in
+
+```
+li.special {
+  color: orange;
+  font-weight: bold;
+}
+```
+
+This allows to use in span also
+
+```
+li.special,
+span.special {
+  color: orange;
+  font-weight: bold;
+}
+```
+*/
+
+/* style based on the element's location in the document */
+li em {
+    color: rebeccapurple;
+  }
+
+/* note the difference between "h1, p", "h1 + p", and "h1 +p +p" */
+h1 + p{
+    font-size: 200%;
+  }
+
+/* Style based on state */
+a:link {
+    color: pink;
+  }
+  
+a:visited {
+    color: green;
+  }
+  
+ /* change style based on hover */
+ a:hover {
+    text-decoration: none;
+  }
+
+ /* Combining selectors and combinators 
+selects any <span> that is inside a <p>, which is inside an <article>
+
+```
+article p span { ... }
+```
+
+selects any <p> that comes directly after a <ul>, which comes directly after an <h1>
+
+```
+h1 + ul + p { ... }
+```
+*/ 
+
+/* Combine multiple types together 
+This will style any element with a class of special, which is inside a <p>, which comes just after an <h1>, which is inside a <body> */
+body h1 + p .special {
+    color: yellow;
+    background-color: black;
+    padding: 5px;
+  }

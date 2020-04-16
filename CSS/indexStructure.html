@@ -1,0 +1,45 @@
+<!--- https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/How_CSS_is_structured -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>My CSS experiment</title>
+    <link rel="stylesheet" href="stylesStructure.css">
+<!--- The stylesheet could be placed elsewhere in your directory structure ... some examples ff.
+Inside a subdirectory called styles inside the current directory 
+<link rel="stylesheet" href="styles/style.css">
+
+Inside a subdirectory called general, which is in a subdirectory called styles, inside the current directory
+<link rel="stylesheet" href="styles/general/style.css">
+
+Go up one directory level, then inside a subdirectory called styles 
+<link rel="stylesheet" href="../styles/style.css"> 
+-->
+
+<!-- Inline style. This could be especially useful if you are working with a content
+    management system where CSS file(s) cannot be otherwise directly ... such as
+
+    <style>
+      h1 {
+        color: blue;
+        background-color: yellow;
+        border: 1px solid black;
+      }
+
+      p {
+        color: red;
+      }
+    </style>
+
+-->
+
+  </head>
+  <body>
+    <h1>Hello World!</h1>
+    <p>This is my first CSS example</p>
+<!-- Functions ... see the CSS for this div class -->
+    <div class="outer"><div class="box1">The inner box is 90% - 30px.</div></div>
+<!-- Transform ... see the CSS for this div class -->
+    <div class="box2"></div>    
+  </body>
+</html>

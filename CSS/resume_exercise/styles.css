@@ -1,0 +1,26 @@
+h1 {
+    color: hotpink;
+    border-bottom: 10px dotted purple;
+}
+
+h2 {
+    font-style: italic
+}
+
+.job-title {
+    color: darkgrey;
+    font-size: larger;
+}
+
+ul {
+    background-color: #eeeeee;
+    border-style: solid;
+    border-color: purple;
+    border-width: 5px;
+    padding: 25px;
+}
+
+/* I had to look this up */
+a:hover {
+    color: green
+}
